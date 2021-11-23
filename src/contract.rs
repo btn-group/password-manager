@@ -3,10 +3,7 @@ use crate::msg::{
     space_pad, HandleAnswer, HandleMsg, InitMsg, QueryAnswer, QueryMsg, ResponseStatus::Success,
 };
 use crate::rand::sha_256;
-use crate::state::{
-    read_allowance, read_viewing_key, write_allowance, write_viewing_key, Config, Constants,
-    ReadonlyBalances, ReadonlyConfig,
-};
+use crate::state::{read_viewing_key, write_viewing_key, Constants};
 use crate::transaction_history::{get_transfers, get_txs};
 use crate::viewing_key::{ViewingKey, VIEWING_KEY_SIZE};
 /// This contract implements SNIP-20 standard:
@@ -26,37 +23,14 @@ pub fn init<S: Storage, A: Api, Q: Querier>(
     env: Env,
     msg: InitMsg,
 ) -> StdResult<InitResponse> {
-    // Check name, symbol, decimals
-    if !is_valid_name(&msg.name) {
-        return Err(StdError::generic_err(
-            "Name is not in the expected format (3-30 UTF-8 bytes)",
-        ));
-    }
-    if !is_valid_symbol(&msg.symbol) {
-        return Err(StdError::generic_err(
-            "Ticker symbol is not in expected format [A-Z]{3,6}",
-        ));
-    }
-    if msg.decimals > 18 {
-        return Err(StdError::generic_err("Decimals must not exceed 18"));
-    }
-
     let admin = msg.admin.unwrap_or(env.message.sender);
     let _canon_admin = deps.api.canonical_address(&admin)?;
-
-    let total_supply: u128 = 0;
     let prng_seed_hashed = sha_256(&msg.prng_seed.0);
 
     let mut config = Config::from_storage(&mut deps.storage);
     config.set_constants(&Constants {
-        name: msg.name,
-        symbol: msg.symbol,
-        decimals: msg.decimals,
-        admin: admin.clone(),
         prng_seed: prng_seed_hashed.to_vec(),
-        contract_address: env.contract.address,
     })?;
-    config.set_total_supply(total_supply);
     Ok(InitResponse::default())
 }
 
