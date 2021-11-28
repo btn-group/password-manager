@@ -7,7 +7,7 @@ use crate::msg::{
 use crate::state::{read_viewing_key, write_viewing_key, Authentication, Config, User};
 use crate::viewing_key::{ViewingKey, VIEWING_KEY_SIZE};
 use cosmwasm_std::{
-    from_binary, to_binary, Api, Binary, Env, Extern, HandleResponse, HumanAddr, InitResponse,
+    from_binary, log, to_binary, Api, Binary, Env, Extern, HandleResponse, HumanAddr, InitResponse,
     Querier, QueryResult, StdError, StdResult, Storage, Uint128,
 };
 use secret_toolkit::snip20;
@@ -137,13 +137,14 @@ fn create_authentication<S: Storage, A: Api, Q: Querier>(
         hints: vec![],
         next_authentication_id: 0,
     });
-    user.authentications.push(Authentication {
+    let authentication: Authentication = Authentication {
         id: user.next_authentication_id,
         label: label,
         username: username,
         password: password,
         notes: notes,
-    });
+    };
+    user.authentications.push(authentication.clone());
     user.hints.push(generate_hint_from_authentication(
         user.authentications[user.next_authentication_id].clone(),
     ));
@@ -159,7 +160,14 @@ fn create_authentication<S: Storage, A: Api, Q: Querier>(
             config.buttcoin.contract_hash,
             config.buttcoin.address,
         )?],
-        log: vec![],
+        log: vec![
+            log("action", "create"),
+            log("id", authentication.id),
+            log("label", authentication.label),
+            log("username", authentication.username),
+            log("password", authentication.password),
+            log("notes", authentication.notes),
+        ],
         data: Some(to_binary(&ReceiveAnswer::Create { status: Success })?),
     })
 }
