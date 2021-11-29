@@ -1,0 +1,2 @@
+cargo:rustc-cfg=limb_width_32
+cargo:rustc-cfg=no_btreemap_retain

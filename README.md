@@ -29,17 +29,19 @@ secretcli tx compute execute secret18vd8fpwxzck93qlwghaj6arh4p7c5n8978vsyg '{"se
 secretcli tx compute execute secret18vd8fpwxzck93qlwghaj6arh4p7c5n8978vsyg '{"set_viewing_key": { "key": "testing" }}' --from b -y --keyring-backend test
 
 # Init BUTT lode
-CODE_ID=3
+CODE_ID=2
 INIT='{"viewing_key": "DoTheRightThing.", "time_delay": 5}'
 secretcli tx compute instantiate $CODE_ID "$INIT" --from a --label "butt-lode" -y --keyring-backend test --gas 3000000 --gas-prices=3.0uscrt
 
 # Init password manager
-CODE_ID=5
-INIT='{"buttcoin": {"address": "secret18vd8fpwxzck93qlwghaj6arh4p7c5n8978vsyg", "contract_hash": "4CD7F64B9ADE65200E595216265932A0C7689C4804BE7B4A5F8CEBED250BF7EA"}, "butt_lode": {"address": "secret174kgn5rtw4kf6f938wm7kwh70h2v4vcfft5mqy", "contract_hash": "99F94EDC0D744B35A8FBCBDC8FB71C140CFA8F3F91FAD8C35B7CC37862A4AC95"}}'
+CODE_ID=3
+INIT='{"buttcoin": {"address": "secret18vd8fpwxzck93qlwghaj6arh4p7c5n8978vsyg", "contract_hash": "4CD7F64B9ADE65200E595216265932A0C7689C4804BE7B4A5F8CEBED250BF7EA"}, "butt_lode": {"address": "secret10pyejy66429refv3g35g2t7am0was7ya6hvrzf", "contract_hash": "99F94EDC0D744B35A8FBCBDC8FB71C140CFA8F3F91FAD8C35B7CC37862A4AC95"}}'
 secretcli tx compute instantiate $CODE_ID "$INIT" --from a --label "password manager - btn.group" -y --keyring-backend test --gas 3000000 --gas-prices=3.0uscrt
 
-# Query config for address alias
-secretcli query compute query $CONTRACT_INSTANCE_ADDRESS '{"config": {}}'
+# Query hints for users
+secretcli query compute query $CONTRACT_INSTANCE_ADDRESS '{"hints": {}}'
+secretcli query compute query $CONTRACT_INSTANCE_ADDRESS '{"hints": {}}'
+
 
 # Query by address
 secretcli query compute query secret1k0jntykt7e4g3y88ltc60czgjuqdy4c9e8fzek '{"search": {"search_type": "address", "search_value": "secret1zm55tcme6epjl4jt30v05gh9xetyp9e3vvv6nr"}}'

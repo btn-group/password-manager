@@ -1,0 +1,11 @@
+/Users/stevenchang/Desktop/btn/secret-network/password-manager/target/debug/deps/bincode2-3dc209edd907f378.rmeta: /Users/stevenchang/.cargo/registry/src/github.com-1ecc6299db9ec823/bincode2-2.0.1/src/lib.rs /Users/stevenchang/.cargo/registry/src/github.com-1ecc6299db9ec823/bincode2-2.0.1/src/config.rs /Users/stevenchang/.cargo/registry/src/github.com-1ecc6299db9ec823/bincode2-2.0.1/src/de/mod.rs /Users/stevenchang/.cargo/registry/src/github.com-1ecc6299db9ec823/bincode2-2.0.1/src/de/read.rs /Users/stevenchang/.cargo/registry/src/github.com-1ecc6299db9ec823/bincode2-2.0.1/src/error.rs /Users/stevenchang/.cargo/registry/src/github.com-1ecc6299db9ec823/bincode2-2.0.1/src/internal.rs /Users/stevenchang/.cargo/registry/src/github.com-1ecc6299db9ec823/bincode2-2.0.1/src/ser/mod.rs
+
+/Users/stevenchang/Desktop/btn/secret-network/password-manager/target/debug/deps/bincode2-3dc209edd907f378.d: /Users/stevenchang/.cargo/registry/src/github.com-1ecc6299db9ec823/bincode2-2.0.1/src/lib.rs /Users/stevenchang/.cargo/registry/src/github.com-1ecc6299db9ec823/bincode2-2.0.1/src/config.rs /Users/stevenchang/.cargo/registry/src/github.com-1ecc6299db9ec823/bincode2-2.0.1/src/de/mod.rs /Users/stevenchang/.cargo/registry/src/github.com-1ecc6299db9ec823/bincode2-2.0.1/src/de/read.rs /Users/stevenchang/.cargo/registry/src/github.com-1ecc6299db9ec823/bincode2-2.0.1/src/error.rs /Users/stevenchang/.cargo/registry/src/github.com-1ecc6299db9ec823/bincode2-2.0.1/src/internal.rs /Users/stevenchang/.cargo/registry/src/github.com-1ecc6299db9ec823/bincode2-2.0.1/src/ser/mod.rs
+
+/Users/stevenchang/.cargo/registry/src/github.com-1ecc6299db9ec823/bincode2-2.0.1/src/lib.rs:
+/Users/stevenchang/.cargo/registry/src/github.com-1ecc6299db9ec823/bincode2-2.0.1/src/config.rs:
+/Users/stevenchang/.cargo/registry/src/github.com-1ecc6299db9ec823/bincode2-2.0.1/src/de/mod.rs:
+/Users/stevenchang/.cargo/registry/src/github.com-1ecc6299db9ec823/bincode2-2.0.1/src/de/read.rs:
+/Users/stevenchang/.cargo/registry/src/github.com-1ecc6299db9ec823/bincode2-2.0.1/src/error.rs:
+/Users/stevenchang/.cargo/registry/src/github.com-1ecc6299db9ec823/bincode2-2.0.1/src/internal.rs:
+/Users/stevenchang/.cargo/registry/src/github.com-1ecc6299db9ec823/bincode2-2.0.1/src/ser/mod.rs:

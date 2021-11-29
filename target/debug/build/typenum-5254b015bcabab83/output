@@ -1,0 +1,2 @@
+cargo:rustc-env=TYPENUM_BUILD_CONSTS=/Users/stevenchang/Desktop/btn/secret-network/password-manager/target/debug/build/typenum-5254b015bcabab83/out/consts.rs
+cargo:rustc-env=TYPENUM_BUILD_OP=/Users/stevenchang/Desktop/btn/secret-network/password-manager/target/debug/build/typenum-5254b015bcabab83/out/op.rs
