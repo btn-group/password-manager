@@ -1,9 +1,0 @@
-/Users/stevenchang/Desktop/btn/secret-network/password-manager/target/wasm32-unknown-unknown/release/deps/secret_toolkit_serialization-aa15c607d27c575a.rmeta: /Users/stevenchang/.cargo/git/checkouts/secret-toolkit-872798e9a1890cb5/6036e72/packages/serialization/src/lib.rs /Users/stevenchang/.cargo/git/checkouts/secret-toolkit-872798e9a1890cb5/6036e72/packages/serialization/src/bincode2.rs /Users/stevenchang/.cargo/git/checkouts/secret-toolkit-872798e9a1890cb5/6036e72/packages/serialization/src/json.rs
-
-/Users/stevenchang/Desktop/btn/secret-network/password-manager/target/wasm32-unknown-unknown/release/deps/libsecret_toolkit_serialization-aa15c607d27c575a.rlib: /Users/stevenchang/.cargo/git/checkouts/secret-toolkit-872798e9a1890cb5/6036e72/packages/serialization/src/lib.rs /Users/stevenchang/.cargo/git/checkouts/secret-toolkit-872798e9a1890cb5/6036e72/packages/serialization/src/bincode2.rs /Users/stevenchang/.cargo/git/checkouts/secret-toolkit-872798e9a1890cb5/6036e72/packages/serialization/src/json.rs
-
-/Users/stevenchang/Desktop/btn/secret-network/password-manager/target/wasm32-unknown-unknown/release/deps/secret_toolkit_serialization-aa15c607d27c575a.d: /Users/stevenchang/.cargo/git/checkouts/secret-toolkit-872798e9a1890cb5/6036e72/packages/serialization/src/lib.rs /Users/stevenchang/.cargo/git/checkouts/secret-toolkit-872798e9a1890cb5/6036e72/packages/serialization/src/bincode2.rs /Users/stevenchang/.cargo/git/checkouts/secret-toolkit-872798e9a1890cb5/6036e72/packages/serialization/src/json.rs
-
-/Users/stevenchang/.cargo/git/checkouts/secret-toolkit-872798e9a1890cb5/6036e72/packages/serialization/src/lib.rs:
-/Users/stevenchang/.cargo/git/checkouts/secret-toolkit-872798e9a1890cb5/6036e72/packages/serialization/src/bincode2.rs:
-/Users/stevenchang/.cargo/git/checkouts/secret-toolkit-872798e9a1890cb5/6036e72/packages/serialization/src/json.rs:

@@ -1,1 +1,0 @@
-/contract/target/wasm32-unknown-unknown/release/libcw_password_manager_btn_group.rlib: /contract/src/authorize.rs /contract/src/constants.rs /contract/src/contract.rs /contract/src/lib.rs /contract/src/msg.rs /contract/src/state.rs /contract/src/utils.rs /contract/src/viewing_key.rs
